@@ -1,0 +1,16 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 18px;
+    font-size: large;
+}
+.task{
+    text-decoration: line-through;
+    text-align: center;
+}
+.task-and-button{
+    display: flex;
+    align-items: center;
+    gap: 6vw;
+}

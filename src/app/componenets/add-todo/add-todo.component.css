@@ -1,0 +1,17 @@
+.example-full-width{
+   
+        display: flex;
+        justify-content: center;
+        gap: 10vw;
+        vertical-align: middle;
+        padding-top: 5vh;
+    
+}
+.input{
+    width: 50vw;
+    
+}
+.button{
+    display: flex;
+    align-items: center;
+}
