@@ -11,11 +11,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { TodoStatesService } from './services/todo-states.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { LoginComponent } from './componenets/login/login.component';
+import { HomeComponent } from './componenets/home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { MatIconModule } from '@angular/material/icon';
     HeaderComponent,
     AddTodoComponent,
     TodosComponent,
+    LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatListModule,
     MatIconModule,
+    ReactiveFormsModule,
   ],
   providers: [TodoStatesService],
   bootstrap: [AppComponent],
