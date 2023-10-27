@@ -1,11 +1,20 @@
 <ul class="list">
-    <div *ngFor="let todo of allTodos; let i =index"  class="task-and-button">
-        <li *ngIf="state==='All' || todo.status===state" [ngClass]="todo.status==='Finished'? 'task':''  " (click)="toggleState(i)" >
-            {{todo.content}}
-            
-        </li>
-        <button *ngIf="state==='All' || todo.status===state" mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="handleDelete(i)">
-            <mat-icon>delete</mat-icon>
-          </button>
-    </div>
+  <div *ngFor="let todo of allTodos; let i = index" class="task-and-button">
+    <li
+      *ngIf="state === 'All' || todo.status === state"
+      [ngClass]="todo.status === 'Finished' ? 'task' : ''"
+      (click)="toggleState(i)"
+    >
+      {{ todo.content }}
+    </li>
+    <button
+      *ngIf="state === 'All' || todo.status === state"
+      mat-fab
+      color="primary"
+      aria-label="Example icon button with a delete icon"
+      (click)="handleDelete(i)"
+    >
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
 </ul>

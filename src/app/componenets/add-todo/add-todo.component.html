@@ -1,16 +1,18 @@
 <form (ngSubmit)="handleAddTodo()" class="example-full-width">
-   
-    <br/>
-    <mat-form-field class="input">
-        <mat-label>Favorite food</mat-label>
-        <input #todo="ngModel"  type="text"  matInput [(ngModel)]="todoInput" name="todoInput" placeholder="Add your Todo"
-        >
-        
-    </mat-form-field>
-    <div  class="button">
-        
-        <button mat-raised-button color="primary" type="submit">Add Todo</button>
-    </div>
-    
+  <br />
+  <mat-form-field class="input">
+    <mat-label>Add your todo</mat-label>
+    <input
+      #todo="ngModel"
+      type="text"
+      matInput
+      [(ngModel)]="todoInput"
+      name="todoInput"
+      placeholder="Add your Todo"
+    />
+  </mat-form-field>
+  <div class="button">
+    <button mat-raised-button color="primary" type="submit">Add Todo</button>
+  </div>
 </form>
 <app-todos [todoProp]="todoProp"></app-todos>

@@ -1,11 +1,11 @@
-.todoStateSelect{
-   width: 10vw;
-   padding: 4vw;
+.todoStateSelect {
+  width: 10vw;
+  padding: 4vw;
 }
-.header{
-    height: 11vh;
+.header {
+  height: 11vh;
 }
-.todoStateSelectButton{
-    gap: 2px;
-    float: right;
+.todoStateSelectButton {
+  gap: 2px;
+  float: right;
 }

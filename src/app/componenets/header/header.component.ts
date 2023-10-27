@@ -11,7 +11,6 @@ export class HeaderComponent {
   currentState: string = '';
 
   constructor(private todoStateService: TodoStatesService) {
-    console.log(localStorage.getItem('loginStatus'));
     todoStateService
       .getState()
       .subscribe((state) => (this.currentState = state));

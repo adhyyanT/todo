@@ -1,11 +1,13 @@
-<mat-toolbar class="header">Todo App
+<mat-toolbar class="header"
+  >Todo App
 
-    <mat-select [value]="currentState" class="todoStateSelect">
-        <mat-option *ngFor="let todoState of todoStates" [value]="todoState"
-        (click)="onClick($event,todoState)"
-        >
-          {{todoState}}
-        </mat-option>
-    </mat-select>
-
+  <mat-select [value]="currentState" class="todoStateSelect">
+    <mat-option
+      *ngFor="let todoState of todoStates"
+      [value]="todoState"
+      (click)="onClick($event, todoState)"
+    >
+      {{ todoState }}
+    </mat-option>
+  </mat-select>
 </mat-toolbar>
